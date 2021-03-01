@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from "vue-router";
 import Content from "../components/Content";
 import Main from "../components/Main";
+import text from "../components/text";
 
 //安装路由
 Vue.use(VueRouter);
@@ -21,6 +22,11 @@ export default new VueRouter({
       path: '/main',
       name:'main',
       component: Main
+    },
+    {
+      path: '/zhanglin',
+      name:'zhanglin',
+      component: text
     }
   ]
 });
